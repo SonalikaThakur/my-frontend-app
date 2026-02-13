@@ -7,7 +7,7 @@ function MyDetails() {
 
   useEffect(() => {
     axios
-      .get(`https://welcome-backend-env.eba-aum53iiq.eu-north-1.elasticbeanstalk.com/api/users/${email}`)
+      .get(`http://welcome-backend-env.eba-aum53iiq.eu-north-1.elasticbeanstalk.com/api/users/${email}`)
       .then((res) => setUser(res.data));
   }, []);
 
