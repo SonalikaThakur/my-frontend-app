@@ -18,7 +18,7 @@ function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8082/api/users/register", user);
+    await axios.post("http://welcome-backend-env.eba-aum53iiq.eu-north-1.elasticbeanstalk.com/api/users/register", user);
 
     localStorage.setItem("email", user.email); // Save email
     navigate("/middle");
