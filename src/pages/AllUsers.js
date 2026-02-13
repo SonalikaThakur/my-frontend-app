@@ -6,7 +6,7 @@ function AllUsers() {
 
   useEffect(() => {
     axios
-      .get("http://welcome-backend-env.eba-aum53iiq.eu-north-1.elasticbeanstalk.com/api/users/all")
+      .get("https://welcome-backend-env.eba-aum53iiq.eu-north-1.elasticbeanstalk.com/api/users/all")
       .then((res) => setUsers(res.data));
   }, []);
 
